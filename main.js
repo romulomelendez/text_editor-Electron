@@ -9,8 +9,10 @@ const createWindow = async () => {
 
     })
 
-    mainWindow.loadFile('index.html')
+    await mainWindow.loadFile('./src/pages/editor/index.html')
     
 }
 
  app.whenReady().then(createWindow)
+
+ //app.on('activate', () => {})
